@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'avenir lt pro light', sans-serif;
+    background-color: rgb(247, 250, 252);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+nav{
+    width: 240px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    margin: 40px auto 30px auto;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    top: 104px;
+}
+
+.side li{
+    list-style: none;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.side li > a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 30px;
+    color: #8695A0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.home{
+    background: linear-gradient(90.14deg, rgb(215, 239, 239) 0.12%, rgb(247, 251, 251) 99.89%);
+    width: 240px;
+    height: 50px;
+}
+
+.divider {
+    width: 170px;
+    height: 1px; 
+    background-color: #D6DCE0;
+    margin: 15px auto; 
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.bottom h5{
+    color: #0F3F62;
+    padding: 10px;
+    font-weight: 800px;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.bottom li{
+    list-style: none;
+    padding: 8px;
+}
+
+.bottom  li > a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 30px;
+    color: #8695A0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.middle-corner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    margin-left: 300px;
+    width: 1000px;
+    height: 100vh;
+    position: fixed;
+}
+  
+.top-side{
+    display: flex;
+    gap: 40px;
+    z-index: 1000;
+    width: 1000px;
+}
+
+.left{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 250px;
+}
+
+.left h3{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #0F3F62;
+    margin-bottom: 15px;
+}
+
+.left p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #8695A0;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 350px;
+    height: 50px;
+    padding: 6px 12px;
+    margin-left: 320px;
+}
+
+.search img{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.search input{
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 8px 10px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.card-deck{
+    width: 7200px;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.cards{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    width: 1000px;
+    height: 300px;
+    margin-left: -40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-top{
+    background-color: #E0F3F3;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 202px;
+}
+
+.card-top img{
+    max-width: 100%;
+    height: auto;
+}
+
+.card-bottom{
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-bottom h5{
+    font-size: 16px;
+    color: #0F3F62;
+    margin: 0.5rem 0;
+    font-weight: 900;
+}
+
+.card-bottom p{
+    margin: 0;
+    color: #8695A0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rank{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rank h5{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: rgba(15, 63, 98, 1);
+}
+.rank img{
+    margin-left: auto;
+}
+
+.table{
+    width: 958px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(75.39437866210938px)
+}
+
+
+thead{
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: rgba(134, 149, 160, 1);
+
+}
+
+.safe{
+    margin-top: 10px;
+    padding: 10px;
+}
+  
+.flex{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: rgba(15, 63, 98, 1);
+}
+
+.crown{
+    margin-left: 40px;
+}
+
+td{
+    border-bottom: 1px solid rgba(235, 239, 241, 1);
+}
+
+.align{
+    padding-left: 10px;
+    border-bottom: none;
+}
+
+.hex{
+    border-bottom: none;
+}
+
+.points{
+    font-family: Avenir;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: rgba(15, 63, 98, 1);
+}
+
+.right-corner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 380px; /* or whatever width suits your layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-left: 1px solid rgba(235, 239, 241, 1);
+    margin-top: 20px;
+}
+  
+
+.top-right{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+}
+
+.icons{
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+    margin-right: 55px;
+}
+
+.notifications{
+    width: 15.157894134521484px;
+    height: 18.999923706054688px;
+    top: 55px;
+    left: 1179.5px;
+}
+
+.envelope{
+    width: 18px;
+    height: 13.5px;
+    top: 58.25px;
+    left: 1134px;
+    border-width: 1px;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    width: 164px;
+    height: 50px;
+    top: 40px;
+    left: 1236px;
+    gap: 15px;
+}
+
+.chats{
+    display: flex;
+    margin-top: 30px;
+    position: fixed;
+    top: 80px;
+}
+
+.ironmen{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: fixed;
+    top: 500px;
+}
